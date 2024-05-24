@@ -1,0 +1,35 @@
+@use './../../../assets/styles/color.scss' as color;
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .2rem;
+
+  border-radius: 6px;
+  padding: 8px 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 300ms all ease-in-out;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+}
+
+.btn-primary {
+  background: color.$primary;
+  color: color.$white;
+}
+
+.btn-secondary {
+  background: color.$secondary;
+  color: color.$primary;
+}
+
+.btn-accent {
+  background: color.$accent;
+  color: color.$white;
+}
